@@ -120,7 +120,7 @@ async def plan_trip(trip_request: TripRequest):
         
         route_superchargers = sorted(
             superchargers,
-            key=lambda s: calculate_distance(trip_request.origin, s['location'])
+            key=lambda s: calculate_distance(trip_request.origin, GeoPoint(**s['location']))
         )[:num_stops]
         
         for sc in route_superchargers:
