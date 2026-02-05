@@ -134,7 +134,7 @@ async def plan_trip(trip_request: TripRequest):
                 departureCharge=departure_charge,
                 chargingTime=charging_time,
                 name=sc['name'],
-                location=sc['location']
+                location=GeoPoint(**sc['location'])
             ))
             current_charge = departure_charge
     
