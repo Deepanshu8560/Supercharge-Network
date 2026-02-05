@@ -1,0 +1,484 @@
+{
+  "summary": {
+    "tests_run": 8,
+    "tests_passed": 8,
+    "success_rate": 100.0,
+    "timestamp": "2026-02-05T18:36:58.898844"
+  },
+  "detailed_results": [
+    {
+      "name": "API Root",
+      "method": "GET",
+      "endpoint": "",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_data": {
+        "message": "Supercharger Network Explorer API"
+      }
+    },
+    {
+      "name": "Get All Superchargers",
+      "method": "GET",
+      "endpoint": "superchargers",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_data": [
+        {
+          "id": "1098e259-ef56-4d46-b997-c499aaf98e01",
+          "name": "San Francisco - Fremont Supercharger",
+          "location": {
+            "lat": 37.5483,
+            "lng": -121.9886
+          },
+          "stalls": 24,
+          "available": 18,
+          "power": 250,
+          "amenities": [
+            "restrooms",
+            "food",
+            "wifi",
+            "shopping"
+          ],
+          "busyHours": [
+            {
+              "start": "08:00",
+              "end": "10:00"
+            },
+            {
+              "start": "17:00",
+              "end": "19:00"
+            }
+          ],
+          "address": "46900 Fremont Blvd",
+          "city": "Fremont",
+          "state": "CA"
+        },
+        {
+          "id": "3a747133-fe9d-4b77-9b90-f6a12c11e1b0",
+          "name": "Los Angeles - Santa Monica Supercharger",
+          "location": {
+            "lat": 34.0195,
+            "lng": -118.4912
+          },
+          "stalls": 16,
+          "available": 12,
+          "power": 250,
+          "amenities": [
+            "restrooms",
+            "wifi",
+            "shopping"
+          ],
+          "busyHours": [
+            {
+              "start": "12:00",
+              "end": "14:00"
+            }
+          ],
+          "address": "1433 26th St",
+          "city": "Santa Monica",
+          "state": "CA"
+        },
+        {
+          "id": "0b67787e-d7c4-47cc-9225-a61d4236a0db",
+          "name": "San Diego - Mission Valley Supercharger",
+          "location": {
+            "lat": 32.7682,
+            "lng": -117.1649
+          },
+          "stalls": 20,
+          "available": 15,
+          "power": 250,
+          "amenities": [
+            "restrooms",
+            "food",
+            "shopping"
+          ],
+          "busyHours": [
+            {
+              "start": "11:00",
+              "end": "13:00"
+            }
+          ],
+          "address": "1640 Camino Del Rio N",
+          "city": "San Diego",
+          "state": "CA"
+        },
+        {
+          "id": "08fbccdf-128d-436d-82bf-ca35cbce52cc",
+          "name": "Las Vegas - Spring Valley Supercharger",
+          "location": {
+            "lat": 36.107,
+            "lng": -115.2218
+          },
+          "stalls": 32,
+          "available": 24,
+          "power": 250,
+          "amenities": [
+            "restrooms",
+            "food",
+            "wifi",
+            "lounge"
+          ],
+          "busyHours": [
+            {
+              "start": "09:00",
+              "end": "11:00"
+            },
+            {
+              "start": "15:00",
+              "end": "17:00"
+            }
+          ],
+          "address": "6730 S Las Vegas Blvd",
+          "city": "Las Vegas",
+          "state": "NV"
+        },
+        {
+          "id": "b343302f-c833-45fa-9876-158fe7115262",
+          "name": "Phoenix - Scottsdale Supercharger",
+          "location": {
+            "lat": 33.4942,
+            "lng": -111.9261
+          },
+          "stalls": 18,
+          "available": 10,
+          "power": 250,
+          "amenities": [
+            "restrooms",
+            "food",
+            "wifi"
+          ],
+          "busyHours": [
+            {
+              "start": "14:00",
+              "end": "16:00"
+            }
+          ],
+          "address": "15255 N Scottsdale Rd",
+          "city": "Scottsdale",
+          "state": "AZ"
+        },
+        {
+          "id": "78227301-d446-4f40-b49b-69b70e8adb4e",
+          "name": "Seattle - Bellevue Supercharger",
+          "location": {
+            "lat": 47.6101,
+            "lng": -122.2015
+          },
+          "stalls": 20,
+          "available": 16,
+          "power": 250,
+          "amenities": [
+            "restrooms",
+            "wifi",
+            "food"
+          ],
+          "busyHours": [
+            {
+              "start": "08:00",
+              "end": "10:00"
+            }
+          ],
+          "address": "2055 152nd Ave NE",
+          "city": "Bellevue",
+          "state": "WA"
+        },
+        {
+          "id": "be32b594-18a1-4e7a-a27b-77b39430c163",
+          "name": "Portland - Downtown Supercharger",
+          "location": {
+            "lat": 45.5152,
+            "lng": -122.6784
+          },
+          "stalls": 16,
+          "available": 14,
+          "power": 250,
+          "amenities": [
+            "restrooms",
+            "wifi"
+          ],
+          "busyHours": [
+            {
+              "start": "07:00",
+              "end": "09:00"
+            }
+          ],
+          "address": "1455 SW Broadway",
+          "city": "Portland",
+          "state": "OR"
+        },
+        {
+          "id": "4fe4b390-9624-4444-a523-77144d7e7631",
+          "name": "Denver - Cherry Creek Supercharger",
+          "location": {
+            "lat": 39.7294,
+            "lng": -104.9531
+          },
+          "stalls": 22,
+          "available": 8,
+          "power": 250,
+          "amenities": [
+            "restrooms",
+            "food",
+            "wifi",
+            "shopping"
+          ],
+          "busyHours": [
+            {
+              "start": "12:00",
+              "end": "14:00"
+            },
+            {
+              "start": "18:00",
+              "end": "20:00"
+            }
+          ],
+          "address": "3000 E 1st Ave",
+          "city": "Denver",
+          "state": "CO"
+        },
+        {
+          "id": "fd7f85bf-3ca3-4c9b-99ef-85974f463c61",
+          "name": "Austin - Downtown Supercharger",
+          "location": {
+            "lat": 30.2672,
+            "lng": -97.7431
+          },
+          "stalls": 20,
+          "available": 17,
+          "power": 250,
+          "amenities": [
+            "restrooms",
+            "food",
+            "wifi"
+          ],
+          "busyHours": [
+            {
+              "start": "11:00",
+              "end": "13:00"
+            }
+          ],
+          "address": "98 San Jacinto Blvd",
+          "city": "Austin",
+          "state": "TX"
+        },
+        {
+          "id": "2270114a-782b-4df4-b57f-57d4ccd1446a",
+          "name": "Chicago - Lincoln Park Supercharger",
+          "location": {
+            "lat": 41.9216,
+            "lng": -87.6499
+          },
+          "stalls": 18,
+          "available": 12,
+          "power": 250,
+          "amenities": [
+            "restrooms",
+            "wifi",
+            "food"
+          ],
+          "busyHours": [
+            {
+              "start": "16:00",
+              "end": "18:00"
+            }
+          ],
+          "address": "1551 N Clark St",
+          "city": "Chicago",
+          "state": "IL"
+        },
+        {
+          "id": "ea4188cd-7b15-43ad-9675-0676e5af9272",
+          "name": "New York - Manhattan Supercharger",
+          "location": {
+            "lat": 40.758,
+            "lng": -73.9855
+          },
+          "stalls": 14,
+          "available": 6,
+          "power": 250,
+          "amenities": [
+            "restrooms",
+            "wifi"
+          ],
+          "busyHours": [
+            {
+              "start": "08:00",
+              "end": "10:00"
+            },
+            {
+              "start": "17:00",
+              "end": "19:00"
+            }
+          ],
+          "address": "234 W 42nd St",
+          "city": "New York",
+          "state": "NY"
+        },
+        {
+          "id": "33a8d38e-f38f-44ef-baf5-07139e9807c7",
+          "name": "Miami - South Beach Supercharger",
+          "location": {
+            "lat": 25.7907,
+            "lng": -80.13
+          },
+          "stalls": 16,
+          "available": 13,
+          "power": 250,
+          "amenities": [
+            "restrooms",
+            "food",
+            "wifi"
+          ],
+          "busyHours": [
+            {
+              "start": "10:00",
+              "end": "12:00"
+            }
+          ],
+          "address": "1120 Washington Ave",
+          "city": "Miami Beach",
+          "state": "FL"
+        }
+      ]
+    },
+    {
+      "name": "Get Supercharger by ID",
+      "method": "GET",
+      "endpoint": "superchargers/1098e259-ef56-4d46-b997-c499aaf98e01",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_data": {
+        "id": "1098e259-ef56-4d46-b997-c499aaf98e01",
+        "name": "San Francisco - Fremont Supercharger",
+        "location": {
+          "lat": 37.5483,
+          "lng": -121.9886
+        },
+        "stalls": 24,
+        "available": 18,
+        "power": 250,
+        "amenities": [
+          "restrooms",
+          "food",
+          "wifi",
+          "shopping"
+        ],
+        "busyHours": [
+          {
+            "start": "08:00",
+            "end": "10:00"
+          },
+          {
+            "start": "17:00",
+            "end": "19:00"
+          }
+        ],
+        "address": "46900 Fremont Blvd",
+        "city": "Fremont",
+        "state": "CA"
+      }
+    },
+    {
+      "name": "Get Non-existent Supercharger",
+      "method": "GET",
+      "endpoint": "superchargers/nonexistent-id",
+      "expected_status": 404,
+      "actual_status": 404,
+      "success": true,
+      "response_data": {
+        "detail": "Supercharger not found"
+      }
+    },
+    {
+      "name": "Plan Trip",
+      "method": "POST",
+      "endpoint": "trips/plan",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_data": {
+        "id": "2f7c0ad2-5b60-47eb-8ef6-30247194a3bb",
+        "origin": {
+          "lat": 37.7749,
+          "lng": -122.4194
+        },
+        "destination": {
+          "lat": 34.0522,
+          "lng": -118.2437
+        },
+        "vehicleModel": "Model 3 Long Range",
+        "currentCharge": 80,
+        "stops": [
+          {
+            "superchargerId": "1098e259-ef56-4d46-b997-c499aaf98e01",
+            "arrivalCharge": 60,
+            "departureCharge": 95,
+            "chargingTime": 26,
+            "name": "San Francisco - Fremont Supercharger",
+            "location": {
+              "lat": 37.5483,
+              "lng": -121.9886
+            }
+          }
+        ],
+        "totalDistance": 559.1205770615534,
+        "totalTime": 7.422340546602751
+      }
+    },
+    {
+      "name": "Plan Trip - Invalid Data",
+      "method": "POST",
+      "endpoint": "trips/plan",
+      "expected_status": 422,
+      "actual_status": 422,
+      "success": true,
+      "response_data": {
+        "detail": [
+          {
+            "type": "missing",
+            "loc": [
+              "body"
+            ],
+            "msg": "Field required",
+            "input": null,
+            "url": "https://errors.pydantic.dev/2.12/v/missing"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Save Vehicle Profile",
+      "method": "POST",
+      "endpoint": "vehicle-profile",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_data": {
+        "id": "dadd67bb-07db-465b-8a86-0925757bf25d",
+        "userId": "default_user",
+        "vehicleModel": "Model S",
+        "batteryCapacity": 100,
+        "currentCharge": 75
+      }
+    },
+    {
+      "name": "Get Vehicle Profile",
+      "method": "GET",
+      "endpoint": "vehicle-profile?userId=default_user",
+      "expected_status": 200,
+      "actual_status": 200,
+      "success": true,
+      "response_data": {
+        "id": "dadd67bb-07db-465b-8a86-0925757bf25d",
+        "userId": "default_user",
+        "vehicleModel": "Model S",
+        "batteryCapacity": 100,
+        "currentCharge": 75
+      }
+    }
+  ]
+}
