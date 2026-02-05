@@ -1,0 +1,138 @@
+{
+  "identity": {
+    "name": "E1",
+    "role": "Creative Designer",
+    "mission": "Create a futuristic, automotive-grade Supercharger Explorer that feels like a native Tesla interface.",
+    "principles": [
+      "Fusion over Imitation: Mix Automotive HUD precision with SaaS usability.",
+      "Emotion First: Evoke 'Range Confidence' and 'High-Tech Efficiency'.",
+      "Content is King: The Map is the hero; UI floats above it.",
+      "Zoom In: Focus on charger availability and amenities.",
+      "Negative Space: Don't clutter the map view."
+    ]
+  },
+  "typography": {
+    "headings": {
+      "family": "Barlow Condensed, sans-serif",
+      "weights": ["600", "700", "800"],
+      "usage": "Headings, Data Values, Speed/Range Metrics",
+      "letterSpacing": "tracking-tight"
+    },
+    "body": {
+      "family": "Manrope, sans-serif",
+      "weights": ["400", "500"],
+      "usage": "Paragraphs, Labels, List Items",
+      "letterSpacing": "tracking-normal"
+    },
+    "mono": {
+      "family": "JetBrains Mono, monospace",
+      "usage": "Coordinates, Technical Specs, Charging Rates"
+    }
+  },
+  "colors": {
+    "theme": "dark",
+    "palette": {
+      "background": {
+        "default": "#09090B",
+        "paper": "#18181B",
+        "glass": "rgba(9, 9, 11, 0.85)"
+      },
+      "primary": {
+        "main": "#E82127",
+        "light": "#FF4D52",
+        "dark": "#B91C1F",
+        "contrastText": "#FFFFFF"
+      },
+      "secondary": {
+        "main": "#3B82F6",
+        "light": "#60A5FA",
+        "dark": "#2563EB",
+        "contrastText": "#FFFFFF"
+      },
+      "status": {
+        "success": "#22C55E",
+        "warning": "#EAB308",
+        "error": "#EF4444",
+        "info": "#0EA5E9"
+      },
+      "text": {
+        "primary": "#FAFAFA",
+        "secondary": "#A1A1AA",
+        "muted": "#52525B"
+      }
+    },
+    "gradients": {
+      "primary": "linear-gradient(135deg, #E82127 0%, #B91C1F 100%)",
+      "glass": "linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.01) 100%)"
+    }
+  },
+  "layout": {
+    "grid_system": "Bento Grid (Sidebar/Overlay)",
+    "spacing_scale": "Tailwind Scale (p-4, p-6, p-8)",
+    "container_style": "Fluid Map Background with Floating Panels",
+    "z_index": {
+      "map": 0,
+      "overlay": 10,
+      "modal": 50,
+      "toast": 100
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-white hover:bg-primary/90 rounded-full font-bold tracking-wide shadow-[0_0_15px_rgba(232,33,39,0.4)] transition-all hover:scale-105",
+      "secondary": "bg-secondary/10 text-secondary hover:bg-secondary/20 border border-secondary/20 rounded-full font-medium backdrop-blur-md",
+      "ghost": "hover:bg-white/10 text-white/80 hover:text-white rounded-lg"
+    },
+    "cards": {
+      "glass": "bg-black/80 backdrop-blur-xl border border-white/10 shadow-2xl rounded-xl",
+      "solid": "bg-zinc-900 border border-zinc-800 rounded-xl"
+    },
+    "inputs": {
+      "default": "bg-zinc-950/50 border-zinc-800 focus:border-primary focus:ring-1 focus:ring-primary rounded-lg text-white placeholder:text-zinc-600"
+    },
+    "map_markers": {
+      "available": "w-8 h-8 bg-green-500 rounded-full border-2 border-white shadow-[0_0_10px_rgba(34,197,94,0.6)]",
+      "busy": "w-8 h-8 bg-yellow-500 rounded-full border-2 border-white shadow-[0_0_10px_rgba(234,179,8,0.6)]",
+      "offline": "w-8 h-8 bg-zinc-500 rounded-full border-2 border-white"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": "backdrop-blur-xl bg-black/60 border border-white/10",
+    "neon_glow": "shadow-[0_0_20px_rgba(var(--color),0.5)]",
+    "scanlines": "repeating-linear-gradient(0deg, transparent, transparent 2px, #000 3px)",
+    "borders": "1px solid rgba(255,255,255,0.08)"
+  },
+  "assets": {
+    "images": {
+      "hero_charger": "https://images.unsplash.com/photo-1641052355010-1da4e83230d5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NDh8MHwxfHNlYXJjaHwxfHx0ZXNsYSUyMHN1cGVyY2hhcmdlciUyMHN0YXRpb24lMjBuaWdodHxlbnwwfHx8fDE3NzAzMTYxMTR8MA&ixlib=rb-4.1.0&q=85",
+      "charging_port": "https://images.unsplash.com/photo-1768906730401-596a5156aa11?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODR8MHwxfHNlYXJjaHwxfHxlbGVjdHJpYyUyMHZlaGljbGUlMjBjaGFyZ2luZyUyMHBvcnQlMjBjbG9zZSUyMHVwfGVufDB8fHx8MTc3MDMxNjExNnww&ixlib=rb-4.1.0&q=85",
+      "amenity_coffee": "https://images.unsplash.com/photo-1769985840494-32e240087fa4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTB8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjb2ZmZWUlMjBzaG9wJTIwaW50ZXJpb3IlMjBkYXJrfGVufDB8fHx8MTc3MDMxNjEyMHww&ixlib=rb-4.1.0&q=85"
+    },
+    "icons": "lucide-react (default), @phosphor-icons/react (for detailed automotive icons)"
+  },
+  "motion": {
+    "transitions": "transition-all duration-300 ease-out",
+    "animations": {
+      "fade_in": "animate-in fade-in duration-500",
+      "slide_up": "animate-in slide-in-from-bottom-4 duration-500",
+      "pulse_slow": "animate-pulse duration-[3000ms]"
+    }
+  },
+  "instructions_to_main_agent": [
+    "1. INSTALL FONTS: Add 'Barlow Condensed' and 'Manrope' from Google Fonts immediately.",
+    "2. MAP FIRST: The map is the background. All UI elements must float over it using absolute positioning and z-index.",
+    "3. DARK MODE ONLY: Force dark mode in tailwind config or html class. This app is for in-car use.",
+    "4. GLASS PANELS: Use the 'glass' card style for the sidebar and details panel. Do not use solid opaque backgrounds for main containers.",
+    "5. INTERACTIVE MARKERS: Map markers must be interactive. Clicking one opens the details panel.",
+    "6. ROUTE LINE: Use a bright, glowing line (Cyan or Blue) for the route path on the map.",
+    "7. USE SHADCN: Use Shadcn components for complex interactions (Sheet, Dialog, Slider) but style them with the glass theme.",
+    "8. DATA-TESTID: Add data-testid to all interactive elements (buttons, inputs, markers)."
+  ],
+  "universal_guidelines": [
+    "Avoid 'AI Slop': No generic centered layouts. Use asymmetry.",
+    "No Gradients on Text: Keep text legible.",
+    "Micro-interactions: Hover states must be obvious (scale, brightness, glow).",
+    "Spacing: Use p-6 or p-8 inside cards. Don't cram content.",
+    "Accessibility: Ensure high contrast for text on glass backgrounds."
+  ]
+}
