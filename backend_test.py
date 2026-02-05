@@ -288,7 +288,8 @@ def main():
     if failed_tests:
         print(f"\n❌ Failed Tests ({len(failed_tests)}):")
         for test in failed_tests:
-            print(f"   - {test['name']}: {test.get('error', f'Status {test.get(\"actual_status\", \"unknown\")}')}")
+            error_msg = test.get('error', f'Status {test.get("actual_status", "unknown")}')
+            print(f"   - {test['name']}: {error_msg}")
     
     # Save detailed results
     with open('/app/backend_test_results.json', 'w') as f:
